@@ -10,7 +10,7 @@ The website combines a traditional South Indian food identity with a modern web 
 
 ## 🌐 Live Website
 
-🔗 https://sugith01.github.io/adisil-food-shop/
+🔗 [Visit ADISIL Food Shop](https://sugith01.github.io/adisil-food-shop/)
 
 ---
 
@@ -44,6 +44,9 @@ The website combines a traditional South Indian food identity with a modern web 
 
 ---
 
+## 📁 Project Structure
+
+```text
 adisil-food-shop/
 │
 ├── assets/
@@ -70,92 +73,106 @@ adisil-food-shop/
 ├── style.css
 ├── script.js
 └── README.md
+```
 
-📄 File Description
-File / Folder	Description
-index.html	Main HTML file containing the complete landing page
-style.css	Contains website styling, responsive design, animations and hover effects
-script.js	Handles interactive features and JavaScript functionality
-assets/images/	Contains food and website images
-assets/logos/	Contains ADISIL logos and icons
-README.md	Project documentation
-🧩 Website Sections
+---
 
-The landing page contains the following sections:
+## 📄 File Description
 
-🧭 Navigation Bar
+| File / Folder | Description |
+|---|---|
+| `index.html` | Main HTML file containing the complete landing page |
+| `style.css` | Website styling, responsive design, animations and hover effects |
+| `script.js` | Interactive features and JavaScript functionality |
+| `assets/images/` | Food and website images |
+| `assets/logos/` | ADISIL logos and icons |
+| `README.md` | Project documentation |
+
+---
+
+## 🧩 Website Sections
+
+### 🧭 Navigation Bar
 
 Provides navigation links to different sections of the website and includes a responsive mobile menu.
 
-🍽️ Hero Section
+### 🍽️ Hero Section
 
 Introduces ADISIL with a food image, brand message, description and call-to-action buttons.
 
-🍛 Food Categories
+### 🍛 Food Categories
 
 Displays different food categories available at ADISIL.
 
-⭐ Popular Foods
+### ⭐ Popular Foods
 
 Showcases popular food items with images, descriptions and pricing.
 
-📖 About Us
+### 📖 About Us
 
 Introduces ADISIL and its food philosophy.
 
-🎁 Special Offers
+### 🎁 Special Offers
 
 Displays promotional offers available for customers.
 
-💬 Customer Reviews
+### 💬 Customer Reviews
 
 Displays customer feedback and reviews.
 
-📞 Contact
+### 📞 Contact
 
 Provides contact information and a contact form for customers.
 
-🔗 Footer
+### 🔗 Footer
 
 Contains copyright information, social media links and contact details.
 
-📱 Responsive Design
+---
+
+## 📱 Responsive Design
 
 The website is designed to work across different screen sizes:
 
-📱 Mobile devices
-📲 Tablets
-💻 Laptops
-🖥️ Desktop screens
+- 📱 Mobile devices
+- 📲 Tablets
+- 💻 Laptops
+- 🖥️ Desktop screens
 
 CSS media queries, Flexbox and CSS Grid are used to create the responsive layout.
 
-🎨 Design
+---
+
+## 🎨 Design
 
 The design combines:
 
-🌿 Traditional South Indian food aesthetics
-🟢 Deep green tones
-🟡 Warm golden accents
-🤍 Cream and light backgrounds
-🍂 Earthy food-inspired colors
-✨ Modern typography
-🎞️ Smooth CSS animations
+- 🌿 Traditional South Indian food aesthetics
+- 🟢 Deep green tones
+- 🟡 Warm golden accents
+- 🤍 Cream and light backgrounds
+- 🍂 Earthy food-inspired colors
+- ✨ Modern typography
+- 🎞️ Smooth CSS animations
 
 The banana leaf visual identity represents the traditional South Indian dining experience.
 
-⚡ JavaScript Functionality
+---
+
+## ⚡ JavaScript Functionality
 
 JavaScript is used to provide interactive features such as:
 
-Mobile navigation menu
-Food category filtering
-Customer review interactions
-Contact form validation
-WhatsApp messaging
-Email functionality
-Offer code interactions
-Smooth scrolling
+- Mobile navigation menu
+- Food category filtering
+- Customer review interactions
+- Contact form validation
+- WhatsApp messaging
+- Email functionality
+- Offer code interactions
+- Smooth scrolling
+
+---
 
 ## 📬 Contact
 
@@ -173,24 +190,30 @@ Smooth scrolling
 
 ▶️ YouTube: [Subscribe on YouTube](https://www.youtube.com/@Adisil-foods)
 
-🚀 Deployment
+---
 
-This project is deployed using GitHub Pages.
+## 🚀 Deployment
 
-To deploy the project:
+This project is deployed using **GitHub Pages**.
 
-Push the project to GitHub.
-Open the repository Settings.
-Select Pages.
-Choose Deploy from a branch.
-Select the main branch.
-Select / (root).
-Click Save.
+### Deployment Steps
+
+1. Push the project to GitHub.
+2. Open the repository **Settings**.
+3. Select **Pages**.
+4. Choose **Deploy from a branch**.
+5. Select the `main` branch.
+6. Select `/ (root)`.
+7. Click **Save**.
 
 The website will then be available through the GitHub Pages URL.
 
-👨‍💻 Developer
+---
 
-Shree Hari Sugith M
+## 👨‍💻 Developer
 
-Frontend Development Project – ADISIL Food Shop Landing Page
+**Shree Hari Sugith M**
+
+Frontend Development Project – **ADISIL Food Shop Landing Page**
+
+---
