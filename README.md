@@ -44,13 +44,9 @@ The website combines a traditional South Indian food identity with a modern web 
 
 ---
 
-## 📁 Project Structure
-
-
 adisil-food-shop/
 │
 ├── assets/
-│   │
 │   ├── images/
 │   │   ├── about-food.png
 │   │   ├── biriyani.jpeg
