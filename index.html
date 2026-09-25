@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADISIL | Tradition on Every Plate</title>
+  <meta name="description" content="ADISIL is a modern food shop serving authentic South Indian flavours with a contemporary dining experience." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logos/icon.jpg" />
+  <link rel="shortcut icon" type="image/jpeg" href="assets/images/logos/icon.jpg" />
+  <link rel="apple-touch-icon" href="assets/images/logos/icon.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="ADISIL home">
+        <img src="assets/logos/ADISIL-LOGO2.png" alt="ADISIL — Tradition on Every Plate" class="logo-img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="primaryMenu">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#offers" class="nav-link">Offers</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta-item"><a href="#menu" class="btn btn-primary btn-small">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Authentic flavours &middot; Modern experience</p>
+          <h1 class="hero-heading">Tradition served with every bite</h1>
+          <p class="hero-desc">Discover delicious dishes inspired by timeless flavours, prepared with fresh ingredients and served with heart — from steaming dosas to slow-cooked biryani.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#about" class="btn btn-ghost">Our Story</a>
+          </div>
+          <dl class="hero-stats">
+            <div class="hero-stat">
+              <dt>Recipes</dt>
+              <dd>40+ dishes</dd>
+            </div>
+            <div class="hero-stat">
+              <dt>Rating</dt>
+              <dd>4.8 average</dd>
+            </div>
+            <div class="hero-stat">
+              <dt>Since</dt>
+              <dd>2016 kitchen</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-blob" aria-hidden="true"></div>
+          <img
+            class="hero-image"
+            src="assets/images/hero-food.jpeg"
+            alt="A steaming plate of ADISIL's signature biryani garnished with fresh coriander"
+            width="640" height="640"
+          />
+          <div class="hero-floating-card">
+            <span class="hero-floating-icon" aria-hidden="true">★</span>
+            <div>
+              <strong>4.8/5</strong>
+              <span>From 2,300+ orders</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOD CATEGORIES ============ -->
+    <section class="categories" id="categories">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>Pick a craving</h2>
+          <p>Browse by category, or jump straight into our full menu below.</p>
+        </div>
+
+        <div class="category-grid" id="categoryGrid">
+          <!-- populated by JS, with noscript fallback below -->
+        </div>
+
+        <noscript>
+          <ul class="category-grid">
+            <li class="category-card">South Indian</li>
+            <li class="category-card">Biryani</li>
+            <li class="category-card">North Indian</li>
+            <li class="category-card">Chinese</li>
+            <li class="category-card">Snacks</li>
+            <li class="category-card">Desserts</li>
+            <li class="category-card">Beverages</li>
+          </ul>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED FOOD ITEMS ============ -->
+    <section class="menu" id="menu">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>Popular this week</h2>
+          <p>Hand-picked favourites, cooked fresh to order every single day.</p>
+        </div>
+
+        <div class="filter-bar" id="filterBar" role="group" aria-label="Filter food by category">
+          <!-- populated by JS -->
+        </div>
+
+        <div class="food-grid" id="foodGrid" aria-live="polite">
+          <!-- food cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT US ============ -->
+    <section class="about" id="about">
+      <div class="section-inner about-inner">
+        <div class="about-media reveal">
+          <img
+            src="assets/images/about-food.png"
+            alt="ADISIL kitchen staff preparing fresh South Indian dishes"
+            width="600" height="700"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>Where tradition meets taste</h2>
+          <p>ADISIL began as a single stall serving dosas to a hungry morning crowd. What stayed constant as we grew was the way we cook: unhurried, ingredient-first, and rooted in recipes passed down through generations of South Indian kitchens.</p>
+          <p>Today every dish still starts from scratch — spices ground in-house, batters fermented overnight, and gravies simmered slowly rather than rushed. It's traditional cooking, served for how people eat today.</p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon" aria-hidden="true">🌿</span>
+              <div>
+                <h3>Fresh ingredients</h3>
+                <p>Sourced daily from local markets and trusted growers.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">📜</span>
+              <div>
+                <h3>Authentic recipes</h3>
+                <p>Family recipes, unchanged in method for three generations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">❤</span>
+              <div>
+                <h3>Made with care</h3>
+                <p>Every plate checked by hand before it leaves our kitchen.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPECIAL OFFERS ============ -->
+    <section class="offers" id="offers">
+      <div class="section-inner offers-inner">
+        <div class="offer-card reveal">
+          <div class="offer-text">
+            <span class="offer-badge">Limited-time offer</span>
+            <p class="offer-amount">20% off</p>
+            <p class="offer-title">Your first order</p>
+            <p class="offer-desc">Experience the flavours of ADISIL and enjoy 20% off your first order. Applies automatically at checkout when you use the code below.</p>
+
+            <div class="promo-row">
+              <code class="promo-code" id="promoCode">ADISIL20</code>
+              <button class="btn btn-secondary" id="copyCodeBtn" type="button" aria-describedby="copyFeedback">
+                Copy code
+              </button>
+              <span class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></span>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">Claim offer</a>
+          </div>
+
+          <div class="offer-media" aria-hidden="true">
+            <img src="assets/images/dessert.jpg" alt="" width="420" height="420" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUSTOMER REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>What guests are saying</h2>
+          <p>A few words from the people who keep coming back for more.</p>
+        </div>
+
+        <div class="review-carousel">
+          <button class="carousel-btn carousel-prev" id="reviewPrev" type="button" aria-label="Previous review">‹</button>
+
+          <div class="review-track-wrap">
+            <ul class="review-track" id="reviewTrack">
+              <!-- review slides injected by JS -->
+            </ul>
+          </div>
+
+          <button class="carousel-btn carousel-next" id="reviewNext" type="button" aria-label="Next review">›</button>
+        </div>
+
+        <div class="carousel-dots" id="reviewDots" role="tablist" aria-label="Choose review"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>We'd love to hear from you</h2>
+          <p>Questions about catering, bulk orders, or just want to say hello? Send us a message and we'll get back to you shortly.</p>
+
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <h3>Location</h3>
+                <p>12 Race Course Road, Coimbatore, Tamil Nadu 641018 <em>(demo address)</em></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+91 9867542301">+91 9867542301</a> <em>(demo number)</em></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:adisilfoodshop@gmail.com">adisilfoodshop@gmail.com</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">🕒</span>
+              <div>
+                <h3>Opening hours</h3>
+                <p>Mon–Sun, 11:00 AM – 10:30 PM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+            <span class="form-error" id="fullNameError" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <span class="form-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number <span class="optional-tag">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+91 XXXXX XXXXX" />
+            <span class="form-error" id="phoneError" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" id="messageError" role="alert"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="emailSubmit">Send via Email</button>
+            <button type="button" class="btn btn-whatsapp" id="whatsappSubmit">Chat on WhatsApp</button>
+          </div>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="ADISIL home">
+          <img src="assets/logos/ADISIL-LOGO2.png" alt="ADISIL — Tradition on Every Plate" class="logo-img" />
+        </a>
+        <p class="footer-desc">A modern food shop serving South Indian flavours the way they were meant to be — fresh, honest, and made with care.</p>
+
+        <ul class="social-links" aria-label="ADISIL on social media">
+          <li><a href="https://www.instagram.com/adisilfoodshop/" target="_blank" rel="noopener noreferrer" aria-label="ADISIL on Instagram">IG</a></li>
+          <li><a href="https://www.facebook.com/Adisilfoodshop" target="_blank" rel="noopener noreferrer" aria-label="ADISIL on Facebook">FB</a></li>
+          <li><a href="https://www.youtube.com/@Adisil-foods" target="_blank" rel="noopener noreferrer" aria-label="ADISIL on YouTube">YT</a></li>
+          <li><a href="https://x.com/Adisilfoodshop" target="_blank" rel="noopener noreferrer" aria-label="ADISIL on X">X</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#menu" data-footer-filter="South Indian">South Indian</a></li>
+          <li><a href="#menu" data-footer-filter="Biryani">Biryani</a></li>
+          <li><a href="#menu" data-footer-filter="Chinese">Chinese</a></li>
+          <li><a href="#menu" data-footer-filter="Desserts">Desserts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Coimbatore, Tamil Nadu</li>
+          <li><a href="mailto:adisilfoodshop@gmail.com">adisilfoodshop@gmail.com</a></li>
+          <li><a href="tel:+91XXXXXXXXXX">+91 9867542301</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> ADISIL. All rights reserved. Demo project for assessment purposes.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
