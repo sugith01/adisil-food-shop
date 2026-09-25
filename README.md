@@ -180,8 +180,6 @@ JavaScript is used to provide interactive features such as:
 
 📧 Email: [adisilfoodshop@gmail.com](mailto:adisilfoodshop@gmail.com)
 
-📱 WhatsApp: +91 63806 06707
-
 📸 Instagram: [Follow us on Instagram](https://www.instagram.com/adisilfoodshop/)
 
 📘 Facebook: [Follow us on Facebook](https://www.facebook.com/Adisilfoodshop)
